@@ -1,20 +1,18 @@
 let g:coc_disable_startup_warning = 1
 
 call plug#begin('~/.vim/plugged')
-Plug 'joshdick/onedark.vim'
 Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-python'
 Plug 'dense-analysis/ale'
+Plug 'joshdick/onedark.vim'
+
 
 call plug#end()
 
@@ -40,3 +38,5 @@ syntax on                   " syntax highlighting
 " map nerdtree toggle to C-o
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
+colorscheme onedark
