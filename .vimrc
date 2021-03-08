@@ -12,6 +12,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'joshdick/onedark.vim'
+Plug 'maksimr/vim-jsbeautify'
 
 
 call plug#end()
@@ -38,5 +39,8 @@ syntax on                   " syntax highlighting
 " map nerdtree toggle to C-o
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
+" set js-beautify as <c-f> ctr-f
+map <c-f> :call JsBeautify()<cr>
 
 colorscheme onedark

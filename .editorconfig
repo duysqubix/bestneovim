@@ -1,0 +1,27 @@
+;.editorconfig for beautify configuration
+
+root =true
+
+[**.js]
+indent_style = space
+indent_size = 4
+
+[**.json]
+indent_style = space
+indent_size = 4
+
+[**.jsx]
+ex4 = true
+indent_style = space
+indent_size = 4
+
+[**.cs]
+indent_style = space
+indent_size = 4
+
+[**.html]
+indent_style = space
+indent_size = 4
+max_char = 78
+brace_style = expand
+
